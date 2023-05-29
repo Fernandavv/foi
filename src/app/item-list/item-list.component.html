@@ -1,0 +1,8 @@
+<h2>Items</h2>
+<button (click)="createItem()">Create Item</button>
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }}
+    <button (click)="deleteItem(item)">Delete</button>
+  </li>
+</ul>
